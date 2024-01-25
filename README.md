@@ -1,5 +1,4 @@
-# Calculadorav1
-COMO FUNCIONA 
+# COMO FUNCIONA 
 En esta calculadora, se presenta una pantalla en la que deben ser ingresados dos números para poder realizar los cálculos.
 Debajo de las entradas de texto hay un pequeño espacio que reflejará las respuestas.
 Para las operaciones básicas, el programa tiene en cuenta el primer término (signo) el segundo término.
@@ -32,3 +31,17 @@ EN EL FORM 1
 Este pequeño código muestra la suma de dos números ingresados por el usuario en los campos de texto, cuando el botón SUMAButton es dado clic muestra el resultado de igual manera de las demás operaciones cada que hacemos un clic muestra el resultado de la operación que queramos. 
 INTERFACES 
 -	Por ultimo se indica un formulario o ventana de interfaces graficas de usuario GUI que se utilizó para la creación de la calculadora manipulando e interactuando con la aplicación. 
+
+
+<video src="Video%20de%20WhatsApp%202024-01-24%20a%20las%2021.46.56_069c2fcb.mp4" controls title="Funcionamiento" style="width: 900px; margin: 20px 20%;"></video>
+
+> .[!NOTE].
+>
+>Jennyfer Guayanay: Elaboración readme - 4 funciones matemáticas 
+>
+>Francisco Caero: Diseño de la calculadora - 4 funciones matemáticas
+>
+>Jhonatan Bautista: Implementación de textareas y las funciones de lectura de los datos - 4 funciones matemáticas
+>
+>Lenin Masapanta: 4 funciones matemáticas
+
