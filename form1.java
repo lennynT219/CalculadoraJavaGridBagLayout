@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import static java.lang.Math.*;
@@ -244,6 +245,53 @@ public class form1 {
             }
         });
 
+        log.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double numero = Double.parseDouble(numero1TextField.getText());
+                double resultado = Math.log(numero);
+                if (!Double.isNaN(resultado)) {
+                    resultadoLbl.setText("Resultado: " + resultado);
+                } else {
+                    resultadoLbl.setText("Error. No existe logaritmo");
+                }
+            }
+        });
+        eu.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double euler = Math.E;
+                resultadoLbl.setText("Resultado: " + euler);
+            }
+        });
+
+        pi.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double npi = Math.PI;
+                resultadoLbl.setText("Resultado: " + npi);
+            }
+        });
+
+
+        raiz.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double radicando = Double.parseDouble(numero2TextField.getText());
+                int indice = Integer.parseInt(numero1TextField.getText());
+                double resultado = Math.pow(radicando, 1.0 / indice);
+                resultadoLbl.setText("Resultado: " + resultado);
+            }
+        });
+
+        abs.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double numero = Double.parseDouble(numero1TextField.getText());
+                double resultado = Math.abs(numero);
+                resultadoLbl.setText("Resultado: " + resultado);
+            }
+        });
     }
 }
 
