@@ -33,9 +33,10 @@ INTERFACES
 -	Por ultimo se indica un formulario o ventana de interfaces graficas de usuario GUI que se utilizó para la creación de la calculadora manipulando e interactuando con la aplicación. 
 
 
-<video src="Video%20de%20WhatsApp%202024-01-24%20a%20las%2021.46.56_069c2fcb.mp4" controls title="Funcionamiento" style="width: 900px; margin: 20px 20%;"></video>
+<video src="https://github.com/lennynT02/Calculadorav1/assets/145746963/b60d5465-7ebd-499f-8200-aceb811681d9" controls title="Funcionamiento" style="width: 900px; margin: 20px 20%;"></video>
 
-> .[!NOTE].
+
+## INTEGRANTES 
 >
 >Jennyfer Guayanay: Elaboración readme - 4 funciones matemáticas 
 >
