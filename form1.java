@@ -32,7 +32,7 @@ public class form1 {
         SUMAButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("Hola a todos");
+                System.out.println("Operación realizada");
                 String n1;
                 n1=numero1TextField.getText();
                 String n2=numero2TextField.getText();
@@ -43,9 +43,6 @@ public class form1 {
                 resultado = numero1+numero2;
 
 
-                System.out.println(n1);
-                System.out.println(n2);
-                System.out.println(resultado);
 
                 String r3;
                 r3=Integer.toString(resultado);
@@ -56,7 +53,7 @@ public class form1 {
         RESTAButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("Hola a todos");
+                System.out.println("Operación realizada");
                 String n1;
                 n1=numero1TextField.getText();
                 String n2=numero2TextField.getText();
@@ -67,9 +64,6 @@ public class form1 {
                 resultado = numero1-numero2;
 
 
-                System.out.println(n1);
-                System.out.println(n2);
-                System.out.println(resultado);
 
                 String r3;
                 r3=Integer.toString(resultado);
@@ -80,7 +74,7 @@ public class form1 {
         xButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("Hola a todos");
+                System.out.println("Operación realizada");
                 String n1;
                 n1=numero1TextField.getText();
                 String n2=numero2TextField.getText();
@@ -91,9 +85,7 @@ public class form1 {
                 resultado = numero1*numero2;
 
 
-                System.out.println(n1);
-                System.out.println(n2);
-                System.out.println(resultado);
+
 
                 String r3;
                 r3=Integer.toString(resultado);
@@ -104,30 +96,28 @@ public class form1 {
         button2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("Hola a todos");
+                System.out.println("Operación realizada");
                 String n1;
                 n1=numero1TextField.getText();
                 String n2=numero2TextField.getText();
-
                 float resultado,numero1,numero2;
                 numero1=Float.parseFloat(n1) ;
                 numero2=Float.parseFloat(n2);
                 resultado = round((numero1/numero2)*1000f)/1000f;
-
-
-                System.out.println(n1);
-                System.out.println(n2);
-                System.out.println(resultado);
-
-                String r3;
-                r3=Float.toString(resultado);
-                resultadoLbl.setText("Resultado: "+r3);
+                if (numero2 == 0){
+                    resultadoLbl.setText("Resultado: Math Error");
+                }else {
+                    String r3;
+                    r3=Float.toString(resultado);
+                    resultadoLbl.setText("Resultado: "+r3);
+                }
 
             }
         });
         porcentaje.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Operación realizada");
                 String n1;
                 n1=numero1TextField.getText();
                 String n2=numero2TextField.getText();
@@ -143,8 +133,10 @@ public class form1 {
             }
         });
         cuadrado.addActionListener(new ActionListener() {
+
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Operación realizada");
                 String n1;
                 n1=numero1TextField.getText();
                 String n2=numero2TextField.getText();
@@ -162,6 +154,7 @@ public class form1 {
         cubo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Operación realizada");
                 String n1;
                 n1=numero1TextField.getText();
                 String n2=numero2TextField.getText();
@@ -179,6 +172,7 @@ public class form1 {
         potencia.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Operación realizada");
                 String n1;
                 n1=numero1TextField.getText();
                 String n2=numero2TextField.getText();
@@ -196,6 +190,7 @@ public class form1 {
         cos.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Operación realizada");
                 String n1;
                 n1=numero1TextField.getText();
                 String n2=numero2TextField.getText();
@@ -213,6 +208,7 @@ public class form1 {
         sen.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Operación realizada");
                 String n1;
                 n1=numero1TextField.getText();
                 String n2=numero2TextField.getText();
@@ -230,6 +226,7 @@ public class form1 {
         tan.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Operación realizada");
                 String n1;
                 n1=numero1TextField.getText();
                 String n2=numero2TextField.getText();
@@ -248,6 +245,7 @@ public class form1 {
         log.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Operación realizada");
                 double numero = Double.parseDouble(numero1TextField.getText());
                 double resultado = Math.log(numero);
                 if (!Double.isNaN(resultado)) {
@@ -260,6 +258,7 @@ public class form1 {
         eu.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Operación realizada");
                 double euler = Math.E;
                 resultadoLbl.setText("Resultado: " + euler);
             }
@@ -268,6 +267,7 @@ public class form1 {
         pi.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Operación realizada");
                 double npi = Math.PI;
                 resultadoLbl.setText("Resultado: " + npi);
             }
@@ -277,6 +277,7 @@ public class form1 {
         raiz.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Operación realizada");
                 double radicando = Double.parseDouble(numero2TextField.getText());
                 int indice = Integer.parseInt(numero1TextField.getText());
                 double resultado = Math.pow(radicando, 1.0 / indice);
@@ -287,6 +288,7 @@ public class form1 {
         abs.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("Operación realizada");
                 double numero = Double.parseDouble(numero1TextField.getText());
                 double resultado = Math.abs(numero);
                 resultadoLbl.setText("Resultado: " + resultado);
